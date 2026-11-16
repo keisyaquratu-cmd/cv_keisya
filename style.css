@@ -1,79 +1,153 @@
-* {
-  box-sizing: border-box;
+ :root {
+  --cream: #f7f5ef;
+  --paper: #fffefa;
+  --sage: #dce5d8;
+  --olive: #596b4d;
+  --olive-dark: #344331;
+  --ink: #273027;
+  --muted: #747d70;
+  --line: #e6e7de;
 }
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
 
 body {
   margin: 0;
-  padding: 32px 16px;
-  background: #f1f5f9;
-  color: #1e293b;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
 }
 
-.cv {
-  max-width: 820px;
-  margin: 0 auto;
+.navbar {
+  background: rgba(255, 254, 250, .96);
+  border-bottom: 1px solid rgba(89, 107, 77, .12);
+  backdrop-filter: blur(12px);
+  padding: 13px 0;
+}
+
+.navbar-brand {
+  color: var(--olive-dark);
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -.5px;
+}
+
+.navbar-brand span { color: #a2ad87; }
+.navbar-brand:hover { color: var(--olive); }
+.nav-link {
+  color: #596253;
+  font-size: .93rem;
+  margin-left: 17px;
+  transition: color .2s ease;
+}
+.nav-link:hover { color: var(--olive); }
+
+.navbar-toggler { border-color: var(--line); }
+.navbar-toggler:focus { box-shadow: 0 0 0 .15rem rgba(89, 107, 77, .2); }
+
+.hero {
+  position: relative;
   overflow: hidden;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  background: linear-gradient(115deg, #e8eee3 0%, #f5f2e9 58%, #e2e9dc 100%);
+  padding: 66px 0 58px;
 }
 
-.cv-header {
-  padding: 36px 40px;
-  background: #1e3a5f;
-  color: #ffffff;
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
 }
 
-.cv-header h1 {
-  margin: 0 0 8px;
-  font-size: 2rem;
+.hero-copy { max-width: 610px; }
+.eyebrow {
+  color: var(--olive);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  margin-bottom: 12px;
 }
 
-.cv-header p {
-  margin: 0;
-  color: #dbeafe;
+.hero h1 {
+  color: var(--olive-dark);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.7rem, 6vw, 4.6rem);
+  line-height: 1.08;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+.hero h1 em { color: var(--olive); font-style: normal; }
+.hero-subtitle { color: #455340; font-size: 1.08rem; font-weight: 600; margin-bottom: 8px; }
+.hero-note { color: var(--muted); margin-bottom: 25px; }
+
+.btn-olive {
+  background: var(--olive);
+  border: 1px solid var(--olive);
+  border-radius: 30px;
+  color: white;
+  padding: 10px 23px;
+  font-weight: 600;
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-.cv-content {
-  padding: 32px 40px;
+.skill-list span {
+    background-color: #e8ecdf;
+    color: #526448;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+.info-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e8e9df;
+    transition: 0.3s ease;
 }
 
-section + section {
-  margin-top: 24px;
-  padding-top: 24px;
-  border-top: 1px solid #e2e8f0;
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-h2 {
-  margin: 0 0 12px;
-  color: #1e3a5f;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* Kotak keahlian dan minat */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
 }
 
-p {
-  margin: 0 0 8px;
+.skill-list span {
+    background-color: #eef1e8;
+    color: #526448;
+    border: 1px solid #dce3d3;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
-ul {
-  margin: 0;
-  padding-left: 22px;
+.skill-list span:hover {
+    background-color: #dfe7d7;
+    transform: translateY(-3px);
 }
 
-li {
-  margin-bottom: 6px;
-}
-
-@media (max-width: 600px) {
-  .cv-header,
-  .cv-content {
-    padding: 24px;
-  }
-
-  .cv-header h1 {
-    font-size: 1.6rem;
-  }
+/* Jarak antar kotak */
+.section-card {
+    border-radius: 18px;
 }

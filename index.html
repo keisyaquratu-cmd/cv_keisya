@@ -1,153 +1,198 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Keisya Quratuain</title>
-  
-  <!-- 1. Bootstrap 5 CSS CDN -->
+  <meta name="description" content="Curriculum Vitae Keisya Quratuain">
+  <title>CV | Keisya Quratuain</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Optional Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
 
-  <!-- Komponen Bootstrap 1: Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Portofolio Keisya</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#profil">Profil</a></li>
-          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
-          <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
-        </ul>
-      </div>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#beranda">Keisya<span>.</span></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero Header -->
-  <header class="bg-primary text-white text-center py-5 mb-4 shadow">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Keisya Quratuain</h1>
-      <p class="lead mb-0">Mahasiswa Teknologi Rekayasa Perangkat Lunak</p>
-    </div>
-  </header>
+<header class="hero" id="beranda">
+  <div class="container">
+    <div class="hero-inner">
 
-  <main class="container my-4">
-    <div class="row g-4">
-      
-      <!-- Left Column -->
-      <div class="col-md-4">
-        <!-- Komponen Bootstrap 2: Card (Data Pribadi) -->
-        <div class="card border-0 shadow-sm mb-4">
-          <div class="card-body">
-            <h5 class="card-title text-primary border-bottom pb-2">Data Pribadi</h5>
-            <p class="card-text mb-1"><strong>Nama:</strong> Keisya Quratuain</p>
-            <p class="card-text mb-0"><strong>Status:</strong> Mahasiswa</p>
-          </div>
-        </div>
+      <div class="hero-copy">
+        <p class="eyebrow">CURRICULUM VITAE</p>
+        <h1>Keisya <em>Quratuain</em></h1>
 
-        <!-- Komponen Bootstrap 3: Badge (Keahlian & Minat) -->
-        <div class="card border-0 shadow-sm mb-4" id="keahlian">
-          <div class="card-body">
-            <h5 class="card-title text-primary border-bottom pb-2">Keahlian</h5>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-              <span class="badge bg-primary fs-6">Fotografi</span>
-              <span class="badge bg-primary fs-6">Videografi</span>
-              <span class="badge bg-secondary fs-6">Pengoperasian Kamera</span>
-              <span class="badge bg-secondary fs-6">Pengambilan Foto/Video</span>
-              <span class="badge bg-dark fs-6">Dasar Perangkat Lunak</span>
-            </div>
+        <p class="hero-subtitle">
+          Mahasiswa Teknologi Rekayasa Perangkat Lunak
+        </p>
 
-            <h5 class="card-title text-primary border-bottom pb-2 mt-4">Minat</h5>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="badge bg-info text-dark fs-6">Fotografi</span>
-              <span class="badge bg-info text-dark fs-6">Videografi</span>
-              <span class="badge bg-success fs-6">Teknologi</span>
-              <span class="badge bg-success fs-6">Software Development</span>
-              <span class="badge bg-warning text-dark fs-6">Mempelajari Hal Baru</span>
-            </div>
-          </div>
-        </div>
+        <p class="hero-note">
+          Tertarik pada teknologi, fotografi, dan videografi.
+        </p>
+
+        <a class="btn btn-olive" href="#profil">Kenali Saya</a>
       </div>
 
-      <!-- Right Column -->
-      <div class="col-md-8">
-        <!-- Card Profil -->
-        <div class="card border-0 shadow-sm mb-4" id="profil">
-          <div class="card-body">
-            <h4 class="card-title text-primary border-bottom pb-2">Profil</h4>
-            <p class="card-text text-secondary">
-              Saya merupakan mahasiswa semester 3 Program Studi Teknologi Rekayasa
-              Perangkat Lunak di Politeknik Manahijul Huda. Saya memiliki ketertarikan
-              pada bidang teknologi, khususnya pengembangan perangkat lunak, serta
-              memiliki minat dalam bidang fotografi dan videografi. Saya senang
-              mempelajari hal-hal baru dan terus mengembangkan kemampuan.
-            </p>
-          </div>
-        </div>
+      <div class="portrait-wrap">
+        <div class="portrait-backdrop"></div>
+        <img src="foto-keisya.png"
+             alt="Foto profil Keisya Quratuain"
+             class="portrait">
+      </div>
 
-        <!-- Card Pendidikan -->
-        <div class="card border-0 shadow-sm mb-4" id="pendidikan">
-          <div class="card-body">
-            <h4 class="card-title text-primary border-bottom pb-2">Pendidikan</h4>
-            <h5 class="fw-bold mb-1">Politeknik Manahijul Huda</h5>
-            <p class="text-muted">Program Studi Teknologi Rekayasa Perangkat Lunak — Semester 3</p>
-          </div>
-        </div>
+    </div>
+  </div>
+</header>
 
-        <!-- Komponen Bootstrap 4: Accordion (Pengalaman & Detail) -->
-        <div class="card border-0 shadow-sm mb-4" id="pengalaman">
-          <div class="card-body">
-            <h4 class="card-title text-primary border-bottom pb-2 mb-3">Pengalaman</h4>
-            
-            <div class="accordion" id="accordionPengalaman">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                    Pengalaman Kerja & Fokus Saat Ini
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPengalaman">
-                  <div class="accordion-body">
-                    Belum memiliki pengalaman kerja formal. Saat ini saya berfokus pada
-                    pendidikan serta mengembangkan kemampuan di bidang teknologi,
-                    fotografi, dan videografi.
-                  </div>
-                </div>
-              </div>
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                    Aktivitas Akademik & Eksplorasi
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPengalaman">
-                  <div class="accordion-body">
-                    Aktif mengerjakan tugas-tugas perkuliahan pemrograman web dan mengeksplorasi pembuatan konten visual melalui fotografi dan videografi.
-                  </div>
-                </div>
-              </div>
-            </div>
+<main class="container content-wrap">
 
-          </div>
-        </div>
-
+  <!-- PROFIL -->
+  <section class="section-card intro-card" id="profil">
+    <div class="section-heading">
+      <span class="section-number">01</span>
+      <div>
+        <p class="eyebrow">TENTANG SAYA</p>
+        <h2>Profil</h2>
       </div>
     </div>
-  </main>
 
-  <footer class="bg-white text-center py-3 border-top mt-5">
-    <p class="text-muted mb-0">&copy; 2026 Keisya Quratuain. All Rights Reserved.</p>
-  </footer>
+    <p class="body-copy">
+      Saya merupakan mahasiswa semester 3 Program Studi Teknologi
+      Rekayasa Perangkat Lunak di Politeknik Manahijul Huda.
+      Memiliki ketertarikan dalam bidang teknologi, khususnya
+      pengembangan perangkat lunak, serta minat dalam fotografi
+      dan videografi. Saya senang mempelajari hal-hal baru dan
+      terus mengembangkan kemampuan serta kreativitas.
+    </p>
+  </section>
 
-  <!-- Bootstrap 5 JavaScript Bundle CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<div class="row g-4 mt-1">
+
+  <!-- PENDIDIKAN -->
+  <div class="col-lg-6">
+    <section class="section-card h-100" id="pendidikan">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">RIWAYAT STUDI</p>
+          <h2>Pendidikan</h2>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h3>Politeknik Manahijul Huda</h3>
+        <p class="muted">
+          Teknologi Rekayasa Perangkat Lunak
+        </p>
+        <span class="small-tag">Semester 3</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- KEAHLIAN -->
+  <div class="col-lg-6">
+    <section class="section-card h-100" id="keahlian">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">KEMAMPUAN</p>
+          <h2>Keahlian</h2>
+        </div>
+      </div>
+
+      <div class="skill-list">
+        <span>Fotografi</span>
+        <span>Videografi</span>
+        <span>Pengoperasian Kamera</span>
+        <span>Pengambilan Foto dan Video</span>
+        <span>Dasar Perangkat Lunak</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- MINAT -->
+  <div class="col-lg-6">
+    <section class="section-card h-100" id="minat">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div>
+          <p class="eyebrow">BIDANG YANG DISUKAI</p>
+          <h2>Minat</h2>
+        </div>
+      </div>
+
+      <div class="skill-list">
+        <span>Teknologi</span>
+        <span>Software Development</span>
+        <span>Fotografi</span>
+        <span>Videografi</span>
+        <span>Mempelajari Hal Baru</span>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+  <!-- PENGALAMAN -->
+  <section class="section-card experience-card" id="pengalaman">
+    <div class="section-heading">
+      <span class="section-number">04</span>
+      <div>
+        <p class="eyebrow">KEGIATAN & PENGEMBANGAN DIRI</p>
+        <h2>Pengalaman dan Aktivitas</h2>
+      </div>
+    </div>
+
+    <p class="body-copy">
+      Memiliki pengalaman dalam kegiatan fotografi dan videografi,
+      mulai dari pengoperasian kamera hingga proses pengambilan foto
+      dan video. Selain itu, mempelajari dasar-dasar teknologi dan
+      perangkat lunak melalui kegiatan akademik. Terus mengembangkan
+      kemampuan, kreativitas, serta wawasan di bidang teknologi.
+    </p>
+
+    <div class="activity-note">
+      <span class="activity-icon">✦</span>
+      <span>
+        Fokus pada pembelajaran, eksplorasi, dan pengembangan keterampilan.
+      </span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Keisya Quratuain</p>
+    <span>Terima kasih telah mengunjungi CV saya.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
